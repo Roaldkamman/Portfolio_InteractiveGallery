@@ -4,6 +4,7 @@ $('#search').keyup(function() {
 
    $('a').each(function() {
      let $caption = $(this).attr('data-title').toLowerCase();
+     
      if ($caption.indexOf($searchInput) > -1) {
          $(this).parent().show();
      } else {
